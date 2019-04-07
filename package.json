@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "node-gyp rebuild --target=4.0.3 --arch=x64 --dist-url=https://atom.io/download/electron",
-    "build-win": "node-gyp rebuild --target=4.0.3 --arch=x64 --dist-url=https://atom.io/download/electron",
+    "build-win": "node-gyp rebuild --target=4.0.3 --arch=ia32 --dist-url=https://atom.io/download/electron",
     "test": "mocha --compilers coffee:coffeescript --grep Module",
     "full-test": "mocha --compilers coffee:coffeescript",
     "valgrind": "coffee -c test/usb.coffee; valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec"
